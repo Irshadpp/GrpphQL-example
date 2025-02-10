@@ -2,9 +2,9 @@
   "name": "graphql-example",
   "version": "1.0.0",
   "main": "index.js",
-"scripts": {
+  "scripts": {
     "compile": "tsc",
-    "start": "npm run compile && node ./dist/index.js"
+    "start": "nodemon ./dist/index.js"
   },
   "keywords": [],
   "author": "",
@@ -13,10 +13,12 @@
   "type": "module",
   "dependencies": {
     "@apollo/server": "^4.11.3",
-    "graphql": "^16.10.0"
+    "graphql": "^16.10.0",
+    "nodemon": "^3.1.9"
   },
   "devDependencies": {
     "@types/node": "^22.13.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
   }
 }
